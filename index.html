@@ -1,160 +1,259 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzeria Limoncello | Italian Restaurant Bangkok</title>
 
-<title>Pizzeria Limoncello | Italian Luxury Dining</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 
-<meta name="description" content="Authentic Italian Restaurant in Bangkok">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
 
-<nav class="navbar">
+    <div class="topbar">
+        <span>17 Soi Sukhumvit 11, Bangkok</span>
+        <span>Reservation : +66 88 851 0707</span>
+    </div>
 
-<div class="logo">
-Pizzeria Limoncello
-</div>
+    <nav>
 
-<ul>
+        <ul class="menu-left">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#menu">MENU</a></li>
+        </ul>
 
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#gallery">Gallery</a></li>
-<li><a href="#reserve">Reserve</a></li>
-<li><a href="#contact">Contact</a></li>
+        <div class="logo">
+            <h1>Pizzeria<br>Limoncello</h1>
+        </div>
 
-</ul>
+        <ul class="menu-right">
+            <li><a href="#reservation">RESERVATION</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
 
-</nav>
+    </nav>
 
 </header>
 
-<section id="home" class="hero">
+<section class="hero">
 
-<div class="overlay"></div>
+    <img src="00 front 1 red.jpg" alt="Pizzeria Limoncello">
 
-<div class="hero-content">
+    <div class="hero-text">
 
-<h1>Pizzeria Limoncello</h1>
+        <h2>AUTHENTIC ITALIAN CUISINE</h2>
 
-<p>Italian Luxury Dining in the Heart of Bangkok</p>
+        <h1>Welcome to<br>Pizzeria Limoncello</h1>
 
-<a href="#reserve" class="btn">
-Reserve a Table
-</a>
+        <a href="#reservation" class="btn">
+            Reserve a Table
+        </a>
 
-</div>
+    </div>
 
 </section>
+
 <section id="about" class="about">
 
 <div class="container">
 
-<h2>About Us</h2>
+<div class="about-left">
+
+<h2>Welcome</h2>
 
 <p>
-Located in Sukhumvit 11, Pizzeria Limoncello brings the authentic
-flavors of Italy to Bangkok with handmade pizza, fresh pasta,
-premium ingredients, and warm Italian hospitality.
+
+Pizzeria Limoncello brings authentic Italian dining to the heart of Bangkok.
+
+Enjoy handcrafted pizza, fresh pasta, premium ingredients and warm Italian hospitality in a charming atmosphere inspired by Southern Italy.
+
+</p>
+
+<p>
+
+Whether you are joining us for a family dinner, romantic evening or business lunch, we look forward to welcoming you.
+
 </p>
 
 </div>
 
-</section>
+<div class="about-right">
 
-<section id="gallery" class="gallery">
+<h3>Opening Hours</h3>
 
-<h2>Gallery</h2>
+<p>Wednesday – Monday</p>
 
-<div class="gallery-grid">
+<p>11:00 – 14:00</p>
 
-<img src="00 front 1 red.jpg" alt="Restaurant Front">
+<p>17:00 – 22:30</p>
 
-<img src="S__4440170_0.jpg" alt="Italian Food">
+<p>Closed on Tuesday</p>
 
-<img src="S__4440172_0.jpg" alt="Pizza">
-
-<img src="S__4440175_0.jpg" alt="Restaurant">
-
-<img src="S__4440176_0.jpg" alt="Italian Cuisine">
-
-<img src="S__4440231_0.jpg" alt="Dining">
+</div>
 
 </div>
 
 </section>
+<section id="reservation" class="reservation">
 
-<section id="reserve" class="reserve">
+    <div class="container">
 
-<h2>Reserve a Table</h2>
+        <div class="reservation-title">
 
-<form>
+            <h2>Reserve a Table</h2>
 
-<input type="text" placeholder="Full Name" required>
+            <p>
+                Experience authentic Italian dining at Pizzeria Limoncello.
+                Complete the form below and our team will confirm your reservation by email or phone.
+            </p>
 
-<input type="email" placeholder="Email" required>
+        </div>
 
-<input type="tel" placeholder="Phone Number">
+        <form class="reservation-form">
 
-<input type="date">
+            <div class="row">
 
-<input type="time">
+                <div class="input-group">
+                    <label>First Name *</label>
+                    <input type="text" required>
+                </div>
 
-<textarea placeholder="Special Request"></textarea>
+                <div class="input-group">
+                    <label>Last Name *</label>
+                    <input type="text" required>
+                </div>
 
-<button type="submit">
-Reserve Now
-</button>
+            </div>
 
-</form>
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Email *</label>
+                    <input type="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Telephone *</label>
+                    <input type="tel" required>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Date *</label>
+                    <input type="date" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Time *</label>
+                    <input type="time" required>
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="input-group">
+                    <label>Adults *</label>
+                    <select>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6+</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label>Children</label>
+                    <select>
+                        <option>0</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Special Requests</label>
+
+                <textarea rows="5"></textarea>
+
+            </div>
+
+            <p class="note">
+                * Reservations are confirmed only after receiving a confirmation email from Pizzeria Limoncello.
+            </p>
+
+            <button type="submit" class="reserve-btn">
+                Reserve Now
+            </button>
+
+        </form>
+
+    </div>
 
 </section>
+
 <section id="contact" class="contact">
 
 <div class="container">
 
 <h2>Contact</h2>
 
-<p><strong>Address</strong><br>
-17 Soi Sukhumvit 11,<br>
-Klongtoey-Nua, Wattana,<br>
+<div class="contact-grid">
+
+<div>
+
+<h3>Address</h3>
+
+<p>
+17 Soi Sukhumvit 11<br>
+Klongtoey-Nua, Wattana<br>
 Bangkok 10110
 </p>
 
+</div>
+
+<div>
+
+<h3>Reservation</h3>
+
 <p>
-<strong>Phone</strong><br>
 088 851 0707<br>
 02 651 0707-8
 </p>
 
 <p>
-<strong>Email</strong><br>
 reserve@pizzalimoncello.com
 </p>
 
-<p>
-<strong>Opening Hours</strong><br>
-Wednesday – Monday<br>
-11:00–14:00<br>
-17:00–22:30<br>
-Closed on Tuesday
-</p>
+</div>
+
+<div>
+
+<h3>Opening Hours</h3>
 
 <p>
-Instagram: @pizzeria.limoncello
+Wednesday – Monday<br>
+11:00 – 14:00<br>
+17:00 – 22:30<br>
+Closed Tuesday
 </p>
+
+</div>
+
+</div>
 
 </div>
 
@@ -162,9 +261,7 @@ Instagram: @pizzeria.limoncello
 
 <footer>
 
-<p>
-© 2026 Pizzeria Limoncello • Italian Luxury Dining
-</p>
+<p>© 2026 Pizzeria Limoncello. All Rights Reserved.</p>
 
 </footer>
 
