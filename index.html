@@ -1,358 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pizzeria Limoncello</title>
-
-<style>
-*{margin:0;padding:0;box-sizing:border-box}
-
-body{
-font-family:Arial,Helvetica,sans-serif;
-background:#111;
-color:#f5f5f5;
-line-height:1.6;
-}
-
-header{
-min-height:100vh;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-background:
-linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("00 front 1 red.jpg");
-background-size:cover;
-background-position:center;
-padding:40px 20px;
-}
-
-.logo{
-width:180px;
-max-width:70%;
-display:block;
-margin:0 auto 25px;
-background:white;
-padding:12px;
-border-radius:18px;
-box-shadow:0 10px 30px rgba(0,0,0,.4);
-}
-
-header h1{
-font-size:62px;
-margin-bottom:18px;
-color:#fff;
-letter-spacing:1px;
-}
-
-header p{
-font-size:22px;
-margin-bottom:30px;
-color:#ddd;
-}
-
-.btn{
-background:#d4af37;
-color:#111;
-padding:15px 35px;
-border-radius:50px;
-text-decoration:none;
-font-weight:bold;
-display:inline-block;
-}
-
-section{
-max-width:1100px;
-margin:auto;
-padding:75px 20px;
-}
-
-h2{
-text-align:center;
-font-size:36px;
-margin-bottom:30px;
-color:#d4af37;
-}
-  .menu{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-gap:25px;
-}
-
-.card{
-background:#1d1d1d;
-padding:25px;
-border-radius:12px;
-transition:.3s;
-border:1px solid #2b2b2b;
-}
-
-.card:hover{
-transform:translateY(-8px);
-border-color:#d4af37;
-}
-
-.card h3{
-margin-bottom:12px;
-font-size:24px;
-color:#fff;
-}
-
-.price{
-color:#d4af37;
-font-size:22px;
-font-weight:bold;
-margin-top:15px;
-}
-
-form{
-max-width:850px;
-margin:auto;
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:18px;
-}
-
-input,
-select,
-textarea{
-width:100%;
-padding:15px;
-border:none;
-border-radius:8px;
-font-size:15px;
-background:#fff;
-}
-
-textarea{
-grid-column:1/3;
-resize:vertical;
-}
-
-.note{
-grid-column:1/3;
-font-size:13px;
-color:#ccc;
-}
-
-button{
-grid-column:1/3;
-padding:16px;
-background:#d4af37;
-color:#111;
-font-size:18px;
-font-weight:bold;
-border:none;
-border-radius:50px;
-cursor:pointer;
-transition:.3s;
-}
-
-button:hover{
-background:#f0c94d;
-}
-
-.contact{
-text-align:center;
-}
-
-footer{
-background:#000;
-padding:30px;
-text-align:center;
-margin-top:60px;
-color:#aaa;
-}
-
-@media(max-width:768px){
-
-header h1{
-font-size:42px;
-}
-
-header p{
-font-size:18px;
-}
-
-.logo{
-width:140px;
-}
-
-form{
-grid-template-columns:1fr;
-}
-
-textarea,
-button,
-.note{
-grid-column:1;
-}
-
-.menu{
-grid-template-columns:1fr;
-}
-
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizzeria Limoncello | Italian Restaurant Bangkok</title>
+  <meta name="description" content="Pizzeria Limoncello, authentic Italian cuisine in Sukhumvit 11, Bangkok. Reserve a table online." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="topbar">
+    <span>17 Soi Sukhumvit 11, Bangkok 10110</span>
+    <span>Reservation: +66 88 851 0707</span>
+  </div>
 
-<header>
+  <header class="site-header">
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">Restaurant</a>
+      <div class="brand">
+        <img src="logo.png" alt="Pizzeria Limoncello logo" />
+      </div>
+      <a href="#reservation">Reservation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<img class="logo" src="logo.png" alt="Pizzeria Limoncello">
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-panel">
+        <p class="eyebrow">Bangkok • Sukhumvit 11</p>
+        <h1>Pizzeria Limoncello</h1>
+        <p class="hero-text">Authentic Italian cuisine, handmade pizza, fresh pasta and warm hospitality in the heart of Bangkok.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#reservation">Reserve a Table</a>
+          <a class="btn secondary" href="#contact">Contact Us</a>
+        </div>
+      </div>
+    </section>
 
-<h1>Pizzeria Limoncello</h1>
+    <section id="about" class="content-wrap two-column">
+      <div class="copy-card">
+        <p class="section-kicker">Welcome</p>
+        <h2>Italian dining with timeless charm</h2>
+        <p>Pizzeria Limoncello brings the taste of Italy to Sukhumvit 11 with handcrafted pizza, fresh pasta, carefully selected ingredients and a warm, relaxed atmosphere.</p>
+        <p>Join us for family dinners, romantic evenings, business lunches and special celebrations.</p>
+      </div>
 
-<p>Authentic Italian Cuisine in Bangkok</p>
+      <aside class="info-card">
+        <h3>Opening Hours</h3>
+        <p><strong>Wednesday – Monday</strong></p>
+        <p>11:00 – 14:00</p>
+        <p>17:00 – 22:30</p>
+        <p class="closed">Closed on Tuesday</p>
+      </aside>
+    </section>
 
-<a class="btn" href="#reservation">
-Reserve a Table
-</a>
+    <section id="menu" class="menu-section">
+      <p class="section-kicker">Signature</p>
+      <h2>Selected Favourites</h2>
+      <div class="menu-grid">
+        <article>
+          <h3>Margherita Pizza</h3>
+          <p>Tomato sauce, mozzarella and basil.</p>
+          <span>฿320</span>
+        </article>
+        <article>
+          <h3>Pepperoni Pizza</h3>
+          <p>Pepperoni, mozzarella and tomato sauce.</p>
+          <span>฿390</span>
+        </article>
+        <article>
+          <h3>Seafood Pizza</h3>
+          <p>Shrimp, squid, mussels and mozzarella.</p>
+          <span>฿450</span>
+        </article>
+      </div>
+    </section>
 
-</header>
+    <section id="reservation" class="reservation-section">
+      <div class="reservation-copy">
+        <p class="section-kicker">Reserve</p>
+        <h2>Reserve a Table</h2>
+        <p>Complete the form and our team will confirm your reservation by email or phone.</p>
+        <p class="small-note">* Reservation is confirmed only after receiving our email response.</p>
+      </div>
 
-<section>
+      <form class="reservation-form" action="https://formsubmit.co/reserve@pizzalimoncello.com" method="POST">
+        <input type="hidden" name="_subject" value="New reservation from Pizzeria Limoncello website">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
-<h2>About Us</h2>
+        <label>First Name *<input type="text" name="First Name" required></label>
+        <label>Last Name *<input type="text" name="Last Name" required></label>
+        <label>Email *<input type="email" name="Email" required></label>
+        <label>Telephone *<input type="tel" name="Telephone" required></label>
+        <label>Date *<input type="date" name="Date" required></label>
+        <label>Time *<input type="time" name="Time" required></label>
+        <label>Adults *
+          <select name="Adults" required>
+            <option value="">Select</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option>
+          </select>
+        </label>
+        <label>Children
+          <select name="Children">
+            <option>0</option><option>1</option><option>2</option><option>3</option>
+          </select>
+        </label>
+        <label class="full">Special Requests<textarea name="Special Requests" rows="5"></textarea></label>
+        <button type="submit">Submit Reservation</button>
+      </form>
+    </section>
 
-<p style="text-align:center;max-width:850px;margin:auto;">
-Experience authentic Italian cuisine with handmade pizza,
-fresh pasta, premium ingredients and warm Italian hospitality
-in the heart of Bangkok.
-</p>
+    <section id="contact" class="contact-section">
+      <p class="section-kicker">Visit Us</p>
+      <h2>Contact & Location</h2>
+      <div class="contact-grid">
+        <div>
+          <h3>Address</h3>
+          <p>17 Soi Sukhumvit 11,<br>Klongtoey-Nua, Wattana,<br>Bangkok 10110</p>
+        </div>
+        <div>
+          <h3>Reservations</h3>
+          <p>088 851 0707<br>02 651 0707-8</p>
+          <p>reserve@pizzalimoncello.com</p>
+        </div>
+        <div>
+          <h3>Instagram</h3>
+          <p>@pizzeria.limoncello</p>
+        </div>
+      </div>
+      <div class="map-box">
+        <iframe title="Pizzeria Limoncello map" src="https://www.google.com/maps?q=17%20Soi%20Sukhumvit%2011%20Bangkok%2010110&output=embed" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
 
-</section>
-<section>
+  <footer class="footer">
+    <img src="logo.png" alt="Pizzeria Limoncello logo" />
+    <p>© 2026 Pizzeria Limoncello. All rights reserved.</p>
+  </footer>
 
-<h2>Signature Menu</h2>
-
-<div class="menu">
-
-<div class="card">
-<h3>Margherita Pizza</h3>
-<p>Tomato sauce, fresh mozzarella & basil.</p>
-<div class="price">฿320</div>
-</div>
-
-<div class="card">
-<h3>Pepperoni Pizza</h3>
-<p>Pepperoni, mozzarella & tomato sauce.</p>
-<div class="price">฿390</div>
-</div>
-
-<div class="card">
-<h3>Seafood Pizza</h3>
-<p>Shrimp, squid, mussels & mozzarella.</p>
-<div class="price">฿450</div>
-</div>
-
-</div>
-
-</section>
-
-<section id="reservation">
-
-<h2>Reserve a Table</h2>
-
-<form action="mailto:reserve@pizzalimoncello.com"
-method="post"
-enctype="text/plain">
-
-<input type="text" name="firstname" placeholder="First Name *" required>
-
-<input type="text" name="lastname" placeholder="Last Name *" required>
-
-<input type="email" name="email" placeholder="Email *" required>
-
-<input type="tel" name="telephone" placeholder="Telephone *" required>
-
-<input type="date" name="date" required>
-
-<input type="time" name="time" required>
-
-<select name="adults" required>
-<option value="">Adults *</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-<option>4</option>
-<option>5</option>
-<option>6+</option>
-</select>
-
-<select name="children">
-<option>Children : 0</option>
-<option>1</option>
-<option>2</option>
-<option>3</option>
-</select>
-
-<textarea
-name="requests"
-rows="6"
-placeholder="Special Requests"></textarea>
-
-<p class="note">
-* Reservation is confirmed only after receiving
-our confirmation email.
-</p>
-
-<button type="submit">
-Submit Reservation
-</button>
-
-</form>
-
-</section>
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>
-<strong>Phone</strong><br>
-088 851 0707<br>
-02 651 0707-8
-</p>
-
-<br>
-
-<p>
-<strong>Email</strong><br>
-reserve@pizzalimoncello.com
-</p>
-
-<br>
-
-<p>
-<strong>Address</strong><br>
-17 Soi Sukhumvit 11<br>
-Klongtoey-Nua, Wattana<br>
-Bangkok 10110
-</p>
-
-<br>
-
-<p>
-<strong>Opening Hours</strong><br>
-Wednesday - Monday<br>
-11:00 - 14:00<br>
-17:00 - 22:30<br>
-Closed Tuesday
-</p>
-
-</section>
-
-<footer>
-
-© 2026 Pizzeria Limoncello
-
-</footer>
-
+  <script src="script.js"></script>
 </body>
 </html>
