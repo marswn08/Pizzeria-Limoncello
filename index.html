@@ -53,8 +53,10 @@
         <p>Please complete the form and our team will confirm your reservation by email or phone.</p>
         <p class="note">* Reservation is confirmed only after receiving our confirmation email.</p>
       </div>
-
-      <form class="reservation-form" action="mailto:reserve@pizzalimoncello.com" method="post" enctype="text/plain">
+<form class="reservation-form" action="https://formsubmit.co/reserve@pizzalimoncello.com" method="POST">
+  <input type="hidden" name="_subject" value="New Table Reservation - Pizzeria Limoncello">
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_next" value="https://pizzerialimoncello.com">
         <input type="text" name="First Name" placeholder="First Name *" required />
         <input type="text" name="Last Name" placeholder="Last Name *" required />
         <input type="email" name="Email" placeholder="Email *" required />
