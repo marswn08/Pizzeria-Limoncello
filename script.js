@@ -1,10 +1,21 @@
-document.addEventListener('DOMContentLoaded', () => {
-  document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', e => {
-      const target = document.querySelector(link.getAttribute('href'));
-      if (!target) return;
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    });
+const form = document.querySelector(".reservation-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const data = new FormData(form);
+
+  const response = await fetch("https://formspree.io/f/xkollyka", {
+    method: "POST",
+    body: data,
+    headers: {
+      Accept: "application/json"
+    }
   });
+
+  if (response.ok) {
+    window.location.href = "thankyou.html";
+  } else {
+    alert("Sorry, something went wrong. Please try again.");
+  }
 });
