@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pizzeria Limoncello | Italian Restaurant Bangkok</title>
-  <meta name="description" content="Pizzeria Limoncello, authentic Italian cuisine in Sukhumvit 11, Bangkok. Reserve a table online.">
+  <meta name="description" content="Pizzeria Limoncello, authentic Italian cuisine in Sukhumvit 11, Bangkok. Reserve a table online." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
@@ -16,7 +16,7 @@
       <a href="#home">HOME</a>
       <a href="#restaurant">RESTAURANT</a>
       <a class="nav-logo" href="#home" aria-label="Pizzeria Limoncello home">
-        <img src="logo.png" alt="Pizzeria Limoncello logo">
+        <img src="logo.png" alt="Pizzeria Limoncello Logo" />
       </a>
       <a href="#reservation">RESERVATION</a>
       <a href="#contact">CONTACT</a>
@@ -27,76 +27,59 @@
     <section id="home" class="hero">
       <div class="hero-shade"></div>
       <div class="hero-content">
-        <p class="eyebrow">Pizzeria Limoncello Bangkok</p>
+        <p class="eyebrow">Pizzeria Limoncello</p>
         <h1>Authentic Italian Cuisine</h1>
-        <p class="hero-subtitle">Handcrafted pizza, fresh pasta and warm Italian hospitality in Sukhumvit 11.</p>
-        <a class="primary-btn" href="#reservation">Reserve a Table</a>
+        <p class="subtitle">Handcrafted pizza, fresh pasta, premium Italian ingredients and warm hospitality in Bangkok.</p>
+        <a class="gold-btn" href="#reservation">Reserve a Table</a>
       </div>
     </section>
 
-    <section id="restaurant" class="story-section">
-      <div class="story-image">
-        <img src="pizza.jpg" alt="Pizza at Pizzeria Limoncello">
-      </div>
-      <div class="story-text">
-        <div class="ornament">◆ ◆ ◆</div>
-        <p class="section-kicker">Welcome to</p>
-        <h2>Pizzeria Limoncello</h2>
-        <p>Located in the heart of Sukhumvit 11, Pizzeria Limoncello brings the true taste of Italy to Bangkok.</p>
-        <p>Enjoy handcrafted pizzas, fresh pasta, premium Italian ingredients and warm hospitality in a charming restaurant atmosphere.</p>
-        <p>Perfect for family dinners, romantic evenings, business lunches and special occasions.</p>
+    <section id="restaurant" class="restaurant-section">
+      <div class="restaurant-wrap">
+        <div class="restaurant-photo">
+          <img src="pizza.jpg" alt="Pizzeria Limoncello pizza" />
+        </div>
+        <div class="restaurant-copy">
+          <div class="ornament">◆ ◆ ◆</div>
+          <h2>Welcome to<br>Pizzeria Limoncello</h2>
+          <p>Located in the heart of Sukhumvit 11, Pizzeria Limoncello brings the true taste of Italy to Bangkok.</p>
+          <p>Enjoy handcrafted pizzas, fresh pasta, premium Italian ingredients and warm hospitality in a charming restaurant atmosphere.</p>
+          <p>Perfect for family dinners, romantic evenings, business lunches and special occasions.</p>
+        </div>
       </div>
     </section>
 
     <section id="reservation" class="reservation-section">
-      <div class="reservation-copy">
-        <p class="section-kicker gold">Reservation</p>
-        <h2>Reserve a Table</h2>
-        <p>Please complete the form and our team will confirm your reservation by email or phone.</p>
-        <p class="small-note">* Reservation is confirmed only after receiving our confirmation email.</p>
+      <div class="reservation-wrap">
+        <div class="reservation-text">
+          <h2>Reserve a Table</h2>
+          <p>Please complete the form and our team will confirm your reservation by email or phone.</p>
+          <p class="note">* Reservation is confirmed only after receiving our confirmation email.</p>
+        </div>
+
+        <form class="reservation-form" action="mailto:reserve@pizzalimoncello.com" method="post" enctype="text/plain">
+          <input type="text" name="First Name" placeholder="First Name *" required />
+          <input type="text" name="Last Name" placeholder="Last Name *" required />
+          <input type="email" name="Email" placeholder="Email *" required />
+          <input type="tel" name="Telephone" placeholder="Telephone *" required />
+          <input type="date" name="Date" required />
+          <input type="time" name="Time" required />
+          <select name="Adults" required>
+            <option value="">Adults *</option>
+            <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option>
+          </select>
+          <select name="Children">
+            <option value="0">Children</option>
+            <option>0</option><option>1</option><option>2</option><option>3</option>
+          </select>
+          <textarea name="Special Requests" rows="6" placeholder="Special Requests"></textarea>
+          <button type="submit">RESERVE NOW</button>
+        </form>
       </div>
-
-      <form class="reservation-form" action="https://formsubmit.co/reserve@pizzalimoncello.com" method="POST">
-        <input type="hidden" name="_subject" value="New reservation from Pizzeria Limoncello website">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_template" value="table">
-
-        <input type="text" name="First Name" placeholder="First Name *" required>
-        <input type="text" name="Last Name" placeholder="Last Name *" required>
-        <input type="email" name="Email" placeholder="Email *" required>
-        <input type="tel" name="Telephone" placeholder="Telephone *" required>
-        <input type="date" name="Date" required>
-        <input type="time" name="Time" required>
-
-        <select name="Adults" required>
-          <option value="">Adults *</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-          <option>6+</option>
-        </select>
-
-        <select name="Children">
-          <option value="0">Children: 0</option>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-        </select>
-
-        <textarea name="Special Requests" rows="5" placeholder="Special Requests"></textarea>
-        <button type="submit">RESERVE NOW</button>
-      </form>
     </section>
 
     <section id="contact" class="contact-section">
-      <div class="section-heading">
-        <span></span>
-        <h2>Contact</h2>
-        <span></span>
-      </div>
-
+      <h2>Contact</h2>
       <div class="contact-grid">
         <div>
           <h3>Address</h3>
@@ -119,7 +102,7 @@
   </main>
 
   <footer class="site-footer">
-    <img src="logo.png" alt="Pizzeria Limoncello logo">
+    <img src="logo.png" alt="Pizzeria Limoncello Logo" />
     <p>© 2026 Pizzeria Limoncello. All Rights Reserved.</p>
   </footer>
 
