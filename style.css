@@ -76,3 +76,44 @@ background:#E4405F;
 .floating-social a:nth-child(4){
 background:#1877F2;
 }
+.contact-bar{
+  position:fixed;
+  left:50%;
+  bottom:18px;
+  transform:translateX(-50%);
+  z-index:9999;
+  display:flex;
+  gap:8px;
+  background:rgba(8,25,45,.94);
+  padding:10px;
+  border-radius:999px;
+  box-shadow:0 12px 30px rgba(0,0,0,.35);
+}
+
+.contact-bar a{
+  color:white;
+  text-decoration:none;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:.5px;
+  padding:10px 14px;
+  border-radius:999px;
+  background:rgba(255,255,255,.08);
+}
+
+.contact-bar a:last-child{
+  background:#d6b46a;
+  color:#08192d;
+}
+
+@media(max-width:600px){
+  .contact-bar{
+    width:94%;
+    justify-content:space-between;
+  }
+
+  .contact-bar a{
+    font-size:12px;
+    padding:9px 10px;
+  }
+}
