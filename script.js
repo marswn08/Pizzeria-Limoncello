@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('a[href^="#"]').forEach(link => {
-    link.addEventListener('click', event => {
+    link.addEventListener('click', e => {
       const target = document.querySelector(link.getAttribute('href'));
       if (!target) return;
-      event.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
     });
   });
 });
