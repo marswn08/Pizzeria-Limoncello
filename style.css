@@ -170,3 +170,19 @@ background:#1877F2;
 }
 
 }
+.gold-btn {
+    display: inline-block;
+    background: #c9a34a;
+    color: #fff;
+    padding: 16px 42px;
+    text-decoration: none;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+.gold-btn:hover {
+    background: #b58d32;
+    transform: translateY(-2px);
+}
