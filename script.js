@@ -23,3 +23,16 @@ form.addEventListener("submit", async (e) => {
     alert("Unable to send reservation. Please try again.");
   }
 });
+
+window.addEventListener("load", function () {
+
+    const loadingScreen =
+        document.getElementById("loading-screen");
+
+    setTimeout(function () {
+
+        loadingScreen.classList.add("fade-out");
+
+    }, 3000);
+
+});
