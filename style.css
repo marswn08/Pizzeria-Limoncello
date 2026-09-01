@@ -257,13 +257,12 @@ background:#1877F2;
    AWARDS & MENTIONS
 ========================= */
 
+/* =========================
+   AWARDS & MENTIONS
+========================= */
+
 .awards{
-    background:linear-gradient(
-        135deg,
-        #e4a82f,
-        #d98c20,
-        #f0ba45
-    );
+    background:var(--cream);
     padding:90px 30px;
     border-top:2px solid #f5cf78;
     border-bottom:2px solid #b97818;
@@ -383,6 +382,28 @@ background:#1877F2;
 
     font-size:12px;
     font-weight:700;
+}
+
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .awards{
+        padding:65px 22px;
+    }
+
+    .awards-heading h2{
+        font-size:40px;
+    }
+
+    .awards-grid{
+        grid-template-columns:1fr;
+        max-width:550px;
+    }
+
+    .award-photo{
+        height:240px;
+    }
 }
 
 
