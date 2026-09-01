@@ -626,3 +626,32 @@ background:#1877F2;
     }
 
 }
+
+.footer{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.footer-update{
+    position:absolute;
+    right:30px;
+    margin:0;
+    font-size:11px;
+    color:#aaa;
+    font-style:italic;
+}
+
+/* Mobile */
+@media(max-width:768px){
+    .footer{
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .footer-update{
+        position:static;
+        text-align:center;
+    }
+}
