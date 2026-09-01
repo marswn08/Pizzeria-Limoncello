@@ -662,3 +662,78 @@ background:#1877F2;
     font-weight:700;
     letter-spacing:1px;
 }
+
+
+/* =========================
+   LOADING SCREEN
+========================= */
+
+#loading-screen{
+    position:fixed;
+    inset:0;
+
+    background:#07182d;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+
+    z-index:99999;
+
+    opacity:1;
+    visibility:visible;
+
+    transition:
+        opacity 1s ease,
+        visibility 1s ease;
+}
+
+#loading-screen.fade-out{
+    opacity:0;
+    visibility:hidden;
+}
+
+.loading-logo{
+    width:160px;
+    height:auto;
+    margin-bottom:20px;
+
+    animation:loadingLogo 1.2s ease;
+}
+
+.loading-text{
+    color:#d6b46a;
+
+    font-family:'Cormorant Garamond',Georgia,serif;
+    font-size:24px;
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    animation:loadingText 1.5s ease;
+}
+
+@keyframes loadingLogo{
+    from{
+        opacity:0;
+        transform:scale(.85);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+}
+
+@keyframes loadingText{
+    from{
+        opacity:0;
+        transform:translateY(10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
