@@ -400,3 +400,86 @@ background:#1877F2;
         height:240px;
     }
 }
+
+/* =========================
+   SIGNATURE DISH
+========================= */
+
+.signature{
+    background:linear-gradient(135deg, var(--navy), var(--navy2));
+    color:white;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:center;
+
+    gap:70px;
+    padding:90px max(30px,8vw);
+
+    border-top:2px solid var(--gold);
+    border-bottom:2px solid var(--gold);
+}
+
+.signature-image img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+
+    border-radius:6px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+}
+
+.signature-text{
+    max-width:600px;
+}
+
+.signature-label{
+    color:#fff;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:4px;
+    margin-bottom:8px;
+}
+
+.signature-text h2{
+    color:var(--gold);
+    font-size:55px;
+    line-height:1.1;
+    margin-bottom:22px;
+}
+
+.signature-text > p:last-child{
+    color:#f0ece4;
+    font-size:17px;
+    line-height:1.9;
+    text-align:left;
+}
+
+
+/* MOBILE */
+@media(max-width:900px){
+
+    .signature{
+        grid-template-columns:1fr;
+        gap:35px;
+        padding:65px 22px;
+    }
+
+    .signature-image img{
+        height:300px;
+    }
+
+    .signature-text{
+        text-align:center;
+        margin:auto;
+    }
+
+    .signature-text h2{
+        font-size:43px;
+    }
+
+    .signature-text > p:last-child{
+        text-align:center;
+    }
+}
