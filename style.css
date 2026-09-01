@@ -483,3 +483,146 @@ background:#1877F2;
         text-align:center;
     }
 }
+
+/* =========================
+   GUEST REVIEWS
+========================= */
+
+.reviews{
+    background:linear-gradient(
+        135deg,
+        #e4a82f,
+        #d98c20,
+        #f0ba45
+    );
+
+    padding:80px 30px 90px;
+
+    border-top:2px solid #f5cf78;
+    border-bottom:2px solid #b97818;
+}
+
+.reviews-heading{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.reviews-eyebrow{
+    color:#07182d;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:4px;
+    margin-bottom:8px;
+}
+
+.reviews-heading h2{
+    color:#07182d;
+    font-size:48px;
+}
+
+
+/* REVIEW LAYOUT */
+
+.reviews-grid{
+    max-width:1180px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+
+/* INDIVIDUAL REVIEW BOX */
+
+.review-card{
+    background:#ffffff;
+
+    border:1px solid rgba(7,24,45,.18);
+    border-radius:8px;
+
+    padding:35px 30px;
+
+    box-shadow:0 16px 35px rgba(0,0,0,.18);
+
+    display:flex;
+    flex-direction:column;
+
+    transition:.3s;
+}
+
+.review-card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 22px 45px rgba(0,0,0,.25);
+}
+
+
+/* STARS */
+
+.review-stars{
+    color:#d6a62e;
+    font-size:23px;
+    letter-spacing:3px;
+    margin-bottom:18px;
+}
+
+.empty-star{
+    color:#d5d5d5;
+}
+
+
+/* REVIEWER NAME */
+
+.review-card h3{
+    font-family:'Cormorant Garamond',Georgia,serif;
+    color:#07182d;
+    font-size:28px;
+    margin-bottom:15px;
+}
+
+
+/* REVIEW TEXT */
+
+.review-card p{
+    color:#354355;
+    font-size:14px;
+    line-height:1.8;
+    margin-bottom:25px;
+
+    flex-grow:1;
+}
+
+
+/* SCORE AT BOTTOM */
+
+.review-rating{
+    color:#b89147;
+
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+
+    padding-top:15px;
+
+    border-top:1px solid #e8dfd0;
+}
+
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .reviews{
+        padding:60px 22px;
+    }
+
+    .reviews-heading h2{
+        font-size:40px;
+    }
+
+    .reviews-grid{
+        grid-template-columns:1fr;
+        max-width:550px;
+    }
+
+}
