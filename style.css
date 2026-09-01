@@ -1,9 +1,9 @@
 :root{
-  --navy:#07182d;
-  --navy2:#031020;
+  --navy:#6D0F1B;
+  --navy2:#450811;
   --gold:#d6b46a;
   --cream:#f7f1e7;
-  --text:#09203a;
+  --text:#6D0F1B;
   --white:#ffffff;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -32,14 +32,14 @@ img{max-width:100%;display:block}
 h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700}
 .hero h1{font-size:70px;line-height:1.05;text-shadow:0 6px 25px rgba(0,0,0,.6)}
 .tagline{font-size:22px;margin:18px 0 30px;text-shadow:0 3px 15px rgba(0,0,0,.7)}
-.gold-btn{display:inline-block;background:var(--gold);color:#07182d;text-decoration:none;padding:16px 42px;font-weight:700;letter-spacing:2px;box-shadow:0 12px 25px rgba(0,0,0,.25)}
+.gold-btn{display:inline-block;background:var(--gold);color:#6D0F1B;text-decoration:none;padding:16px 42px;font-weight:700;letter-spacing:2px;box-shadow:0 12px 25px rgba(0,0,0,.25)}
 .gold-btn:hover{filter:brightness(1.08)}
 .section-light{background:var(--cream)}
 .intro{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;max-width:1180px;margin:auto;padding:90px 30px}
 .intro-image img{border-radius:6px;box-shadow:0 20px 45px rgba(0,0,0,.18);width:100%;height:380px;object-fit:cover}
 .ornament{color:var(--gold);letter-spacing:8px;font-size:20px;margin-bottom:12px}.intro-text h2{font-size:50px;line-height:1.15;margin-bottom:24px}.intro-text p{font-size:16px;margin-bottom:16px}
 .reservation{background:linear-gradient(135deg,var(--navy),var(--navy2));color:var(--white);display:grid;grid-template-columns:1fr 1.25fr;gap:60px;padding:90px max(30px,8vw);border-top:2px solid var(--gold);border-bottom:2px solid var(--gold)}
-.reservation h2{font-size:48px;color:var(--gold);margin-bottom:24px}.reservation .note{font-size:13px;color:#e6dfd0;margin-top:16px}.reservation-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.reservation-form input,.reservation-form select,.reservation-form textarea{width:100%;border:0;padding:14px 15px;font-family:'Montserrat',Arial,sans-serif;background:#fff;color:#111}.reservation-form textarea{grid-column:1/3;resize:vertical}.reservation-form button{grid-column:1/3;border:0;background:var(--gold);color:#07182d;padding:16px;font-weight:800;letter-spacing:1.5px;cursor:pointer}.reservation-form button:hover{filter:brightness(1.08)}
+.reservation h2{font-size:48px;color:var(--gold);margin-bottom:24px}.reservation .note{font-size:13px;color:#e6dfd0;margin-top:16px}.reservation-form{display:grid;grid-template-columns:1fr 1fr;gap:16px}.reservation-form input,.reservation-form select,.reservation-form textarea{width:100%;border:0;padding:14px 15px;font-family:'Montserrat',Arial,sans-serif;background:#fff;color:#111}.reservation-form textarea{grid-column:1/3;resize:vertical}.reservation-form button{grid-column:1/3;border:0;background:var(--gold);color:#6D0F1B;padding:16px;font-weight:800;letter-spacing:1.5px;cursor:pointer}.reservation-form button:hover{filter:brightness(1.08)}
 .contact{padding:76px 30px;text-align:center}.contact h2{font-size:44px;margin-bottom:35px}.contact-grid{max-width:1120px;margin:auto;display:grid;grid-template-columns:repeat(4,1fr);gap:32px}.contact h3{color:#b89147;margin-bottom:12px;font-size:18px}.contact p{font-size:14px}
 .footer {
     background: var(--navy2);
@@ -74,7 +74,9 @@ h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700}
     color: #ddd;
     line-height: 1.4;
 }
+
 @media(max-width:900px){.navbar{grid-template-columns:repeat(2,1fr);gap:14px}.nav-logo{grid-column:1/3;grid-row:1}.navbar a{font-size:15px}.hero h1{font-size:45px}.tagline{font-size:17px}.intro,.reservation{grid-template-columns:1fr;padding:64px 22px}.intro-image img{height:300px}.reservation-form{grid-template-columns:1fr}.reservation-form textarea,.reservation-form button{grid-column:1}.contact-grid{grid-template-columns:1fr}.intro-text h2,.reservation h2{font-size:38px}}
+
 .floating-social{
 position:fixed;
 right:25px;
@@ -118,6 +120,7 @@ background:#E4405F;
 .floating-social a:nth-child(4){
 background:#1877F2;
 }
+
 .contact-bar{
   position:fixed;
   left:50%;
@@ -126,7 +129,7 @@ background:#1877F2;
   z-index:9999;
   display:flex;
   gap:8px;
-  background:rgba(8,25,45,.94);
+  background:rgba(109,15,27,.94);
   padding:10px;
   border-radius:999px;
   box-shadow:0 12px 30px rgba(0,0,0,.35);
@@ -145,7 +148,7 @@ background:#1877F2;
 
 .contact-bar a:last-child{
   background:#d6b46a;
-  color:#08192d;
+  color:#6D0F1B;
 }
 
 @media(max-width:600px){
@@ -159,6 +162,7 @@ background:#1877F2;
     padding:9px 10px;
   }
 }
+
 .floating-icons{
     position:fixed;
     right:20px;
@@ -181,7 +185,7 @@ background:#1877F2;
     text-decoration:none;
     color:#d6b46a;
 
-    background:#08192d;
+    background:#6D0F1B;
     border:2px solid #d6b46a;
 
     font-size:22px;
@@ -193,7 +197,7 @@ background:#1877F2;
 .floating-icons a:hover{
     transform:translateY(-3px);
     background:#d6b46a;
-    color:#08192d;
+    color:#6D0F1B;
 }
 
 /* Mobile */
@@ -212,6 +216,7 @@ background:#1877F2;
 }
 
 }
+
 .gold-btn {
     display: inline-block;
     background: #c9a34a;
@@ -228,6 +233,7 @@ background:#1877F2;
     background: #b58d32;
     transform: translateY(-2px);
 }
+
 .reservation-info{
     width:100%;
     max-width:720px;
@@ -267,7 +273,7 @@ background:#1877F2;
     max-width:850px;
     margin:0 auto 50px;
     text-align:center;
-    color:#07182d;
+    color:#6D0F1B;
 }
 
 .awards-eyebrow{
@@ -281,7 +287,7 @@ background:#1877F2;
 .awards-heading h2{
     font-size:52px;
     margin-bottom:15px;
-    color:#07182d;
+    color:#6D0F1B;
 }
 
 .awards-heading > p:last-child{
@@ -303,7 +309,7 @@ background:#1877F2;
 
 
 .award-card{
-    background:#07182d;
+    background:#6D0F1B;
     color:white;
 
     border:1px solid rgba(255,255,255,.18);
@@ -508,7 +514,7 @@ background:#1877F2;
 }
 
 .reviews-eyebrow{
-    color:#07182d;
+    color:#6D0F1B;
     font-size:12px;
     font-weight:700;
     letter-spacing:4px;
@@ -516,7 +522,7 @@ background:#1877F2;
 }
 
 .reviews-heading h2{
-    color:#07182d;
+    color:#6D0F1B;
     font-size:48px;
 }
 
@@ -538,7 +544,7 @@ background:#1877F2;
 .review-card{
     background:#ffffff;
 
-    border:1px solid rgba(7,24,45,.18);
+    border:1px solid rgba(109,15,27,.18);
     border-radius:8px;
 
     padding:35px 30px;
@@ -575,7 +581,7 @@ background:#1877F2;
 
 .review-card h3{
     font-family:'Cormorant Garamond',Georgia,serif;
-    color:#07182d;
+    color:#6D0F1B;
     font-size:28px;
     margin-bottom:15px;
 }
@@ -671,7 +677,7 @@ background:#1877F2;
 #loading-screen{
     position:fixed;
     inset:0;
-    background:#07182d;
+    background:#6D0F1B;
 
     display:flex;
     flex-direction:column;
