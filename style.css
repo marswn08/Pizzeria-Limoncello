@@ -41,11 +41,11 @@ h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700}
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:15px;
+    gap:10px;
 }
 
 .footer-copyright img{
-    width:60px;
+    width:10px;
     height:auto;
 }
 
