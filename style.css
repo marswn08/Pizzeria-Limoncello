@@ -678,21 +678,17 @@ background:#1877F2;
     align-items:center;
     justify-content:center;
 
-    z-index:99999;
+    z-index:999999;
 
     opacity:1;
     visibility:visible;
 
-    transition:opacity 1s ease;
+    animation:hideLoadingScreen 1s ease 3s forwards;
 }
 
-/* Fade the whole loading screen away */
-#loading-screen.fade-out{
-    opacity:0;
-    pointer-events:none;
-}
 
-/* Restaurant logo */
+/* LOGO */
+
 .loading-logo{
     width:160px;
     height:auto;
@@ -701,11 +697,14 @@ background:#1877F2;
     animation:loadingLogo 1.2s ease;
 }
 
-/* Since 2003 */
+
+/* SINCE 2003 */
+
 .loading-text{
     color:#d6b46a;
 
-    font-family:'Cormorant Garamond',Georgia,serif;
+    font-family:'Cormorant Garamond', Georgia, serif;
+
     font-size:24px;
     font-weight:700;
 
@@ -714,8 +713,11 @@ background:#1877F2;
     animation:loadingText 1.5s ease;
 }
 
-/* Logo entrance */
+
+/* LOGO APPEARS */
+
 @keyframes loadingLogo{
+
     from{
         opacity:0;
         transform:scale(.85);
@@ -725,10 +727,14 @@ background:#1877F2;
         opacity:1;
         transform:scale(1);
     }
+
 }
 
-/* Text entrance */
+
+/* TEXT APPEARS */
+
 @keyframes loadingText{
+
     from{
         opacity:0;
         transform:translateY(10px);
@@ -738,4 +744,28 @@ background:#1877F2;
         opacity:1;
         transform:translateY(0);
     }
+
+}
+
+
+/* WHOLE SCREEN DISAPPEARS */
+
+@keyframes hideLoadingScreen{
+
+    0%{
+        opacity:1;
+        visibility:visible;
+    }
+
+    99%{
+        opacity:0;
+        visibility:visible;
+    }
+
+    100%{
+        opacity:0;
+        visibility:hidden;
+        pointer-events:none;
+    }
+
 }
