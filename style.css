@@ -35,25 +35,22 @@ h1,h2{font-family:'Cormorant Garamond',Georgia,serif;font-weight:700}
     background:var(--navy2);
     color:#fff;
     padding:32px 20px;
-    text-align:center;
 }
 
 .footer-copyright{
     display:flex;
     align-items:center;
     justify-content:center;
-    gap:12px;
+    gap:15px;
 }
 
 .footer-copyright img{
-    width:45px !important;
-    height:45px !important;
-    object-fit:contain;
-    margin:0 !important;
+    width:60px;
+    height:auto;
 }
 
 .footer-copyright p{
-    margin:0 !important;
+    margin:0;
     font-size:13px;
     color:#ddd;
 }
