@@ -482,6 +482,15 @@
       <i class="fa-brands fa-facebook-f"></i>
     </a>
 
+    <a
+      href="#"
+      class="translate-th"
+      onclick="translateToThai(); return false;"
+      aria-label="Translate website to Thai"
+    >
+      <span>TH</span>
+    </a>
+    
   </div>
 
 
@@ -507,7 +516,33 @@
 </footer>
 
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
+
+<div id="google_translate_element" style="display:none;"></div>
+
+<script>
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: 'en',
+      includedLanguages: 'th',
+      autoDisplay: false
+    },
+    'google_translate_element'
+  );
+}
+
+function translateToThai() {
+  const select = document.querySelector('.goog-te-combo');
+
+  if (select) {
+    select.value = 'th';
+    select.dispatchEvent(new Event('change'));
+  }
+}
+</script>
+
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
 </body>
 </html>
